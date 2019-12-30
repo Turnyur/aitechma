@@ -2,10 +2,10 @@
 
 $C=array();
 
-$C['DB_NAME']='aitechma';
+$C['DB_NAME']='fariocuy_aitechma';
 $C['DB_HOST']='localhost';
-$C['DB_USER']='root';
-$C['DB_PASS']='';
+$C['DB_USER']='fariocuy_aitechma';
+$C['DB_PASS']='@aitechma@';
 
 
 

@@ -64,7 +64,7 @@ $sql="INSERT INTO `users`( `pin`, `username`, `phone`, `email`, `created_at`) VA
                
                    $m_to = $email;
                    $m_subject = "Successful Registration";
-                   $m_from = "aitechma.faritetech.com";
+                   $m_from = "no-reply@aitechma.faritetech.com";
                    $m_pin = $pin;
                  $this-> _sendEmail($m_to, $m_subject, $m_from,$m_pin,$data->username);
                  return $pin;
@@ -145,7 +145,7 @@ $message = '<html><body style="color:#888888;">';
 $message .= '<h4 style="color:#665544;">Dear, '. $username.'</h4>';
 $message .= '<p>Your registration was successful.<br> ';
 $message .='<span style="color:#1883D7;"> <strong>PIN: '.$m_pin.'</strong></span>';
-$message .='<br> Login URL:';
+$message .='<br> Login URL: https://aitechma.faritetech.com/find-user';
 $message .= '</body></html>';
  
 // Sending email
@@ -156,7 +156,7 @@ $message .= '</body></html>';
 }*/
 
 //echo $message;
-//mail($to, $subject, $message, $headers);
+mail($to, $subject, $message, $headers);
 }
 
 
