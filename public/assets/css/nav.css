@@ -1,0 +1,296 @@
+
+section,header{
+	display:block;
+	
+}
+header a{
+	text-decoration: none;
+	font-family: Arial;
+}
+header{
+	/*background-color:rgba(193, 23, 23,1)rgba(2,2,2,1);*/
+	/*padding:10px;*/
+	background: teal;
+
+	text-align:left;
+	/*padding-left: 30px;*/
+	min-height: 130px;
+	margin:auto;
+
+  font-family: Tahoma;
+
+	
+}
+footer{
+	min-height:200px; 
+	box-sizing: border-box;
+	background-color: rgba(10, 15, 21,1);
+
+}
+
+@media screen and (max-width: 700px){
+
+  footer a{
+  padding: 8px 10px;
+
+}
+footer a:hover{
+  background-color:rgba(255, 94, 21,.5); 
+  color: white;
+  text-decoration: none;
+}
+
+}
+
+
+header figure img{
+	max-width:100px;
+	max-height:100px;
+}
+footer{
+	text-align: center;
+	color: rgba(240, 240, 171,1);
+	padding: 15px
+
+}
+.slogan{
+	color:rgba(26, 26, 26,1);
+
+}
+
+/*Normal Icon-bar and Navigation bar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 1s ease;
+}
+@media screen and (max-width: 800px){
+  .sticky {
+  position: relative;
+}
+}
+/*.sticky + #content {
+  padding-top: 360px;
+  transition: padding-top 0.6s ease;
+
+}*/
+
+/*primary Navigation*/
+.icon-bar {
+    width: 100%;
+    background-color: #444;
+background: rgba(18,18,18,1);
+background: -moz-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(10,10,10,0.98) 8%, rgba(20,20,20,0.96) 12%, rgba(23,23,23,0.93) 25%, rgba(15,15,15,0.88) 39%, rgba(5,5,5,0.84) 53%, rgba(10,10,10,0.84) 55%, rgba(0,0,0,0.79) 69%, rgba(0,0,0,0.79) 70%, rgba(8,8,8,0.79) 91%, rgba(5,5,5,0.79) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18,18,18,1)), color-stop(8%, rgba(10,10,10,0.98)), color-stop(12%, rgba(20,20,20,0.96)), color-stop(25%, rgba(23,23,23,0.93)), color-stop(39%, rgba(15,15,15,0.88)), color-stop(53%, rgba(5,5,5,0.84)), color-stop(55%, rgba(10,10,10,0.84)), color-stop(69%, rgba(0,0,0,0.79)), color-stop(70%, rgba(0,0,0,0.79)), color-stop(91%, rgba(8,8,8,0.79)), color-stop(100%, rgba(5,5,5,0.79)));
+background: -webkit-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(10,10,10,0.98) 8%, rgba(20,20,20,0.96) 12%, rgba(23,23,23,0.93) 25%, rgba(15,15,15,0.88) 39%, rgba(5,5,5,0.84) 53%, rgba(10,10,10,0.84) 55%, rgba(0,0,0,0.79) 69%, rgba(0,0,0,0.79) 70%, rgba(8,8,8,0.79) 91%, rgba(5,5,5,0.79) 100%);
+background: -o-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(10,10,10,0.98) 8%, rgba(20,20,20,0.96) 12%, rgba(23,23,23,0.93) 25%, rgba(15,15,15,0.88) 39%, rgba(5,5,5,0.84) 53%, rgba(10,10,10,0.84) 55%, rgba(0,0,0,0.79) 69%, rgba(0,0,0,0.79) 70%, rgba(8,8,8,0.79) 91%, rgba(5,5,5,0.79) 100%);
+background: -ms-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(10,10,10,0.98) 8%, rgba(20,20,20,0.96) 12%, rgba(23,23,23,0.93) 25%, rgba(15,15,15,0.88) 39%, rgba(5,5,5,0.84) 53%, rgba(10,10,10,0.84) 55%, rgba(0,0,0,0.79) 69%, rgba(0,0,0,0.79) 70%, rgba(8,8,8,0.79) 91%, rgba(5,5,5,0.79) 100%);
+background: linear-gradient(to right, rgba(18,18,18,1) 0%, rgba(10,10,10,0.98) 8%, rgba(20,20,20,0.96) 12%, rgba(23,23,23,0.93) 25%, rgba(15,15,15,0.88) 39%, rgba(5,5,5,0.84) 53%, rgba(10,10,10,0.84) 55%, rgba(0,0,0,0.79) 69%, rgba(0,0,0,0.79) 70%, rgba(8,8,8,0.79) 91%, rgba(5,5,5,0.79) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#050505', GradientType=1 );
+    overflow: hidden;
+    z-index: 50;
+
+}
+
+.icon-bar a{
+    float: left;
+    
+    text-align: center;
+    padding: 12px 20px;
+    transition: all 0.6s ease;
+    color: #efefef;
+    font-size: 20px;
+    border-right: 1px solid rgba(20,20,20,.2);
+
+}
+.icon-bar a::before{
+/*content: "♥";*/
+}
+
+.icon-bar a:hover {
+    background-color: rgba(255, 69, 0,.7);
+    border-bottom: 4px solid rgba(255, 69, 0,.7);
+}
+
+#icon-bar a.active {
+    /*background-color: rgba(220, 0, 0,1) !important;*/
+    border-bottom: 4px solid rgba(255, 69, 0,1);
+    transition: all 0.5s ease-in;
+    
+    
+
+}
+a.icon{
+	display: none;
+	color: rgb(144, 219, 255);
+
+}
+@media screen and (max-width: 750px) {
+	/*#icon-bar a.active{
+		display: block;
+	}*/
+	#icon-bar a:not(.icon){
+		border-bottom: 1px solid rgba(40, 41, 35,.2);
+		color:rgba(255, 108, 0,1);
+		padding-left: 40px;
+	}
+	#icon-bar a/*:not(:first-child)*/,div.dropdown{
+		display: none;
+		font-size: 14px;
+
+	}
+section h1,section h2{
+  font-size: 14px;
+}
+
+#icon-bar a.icon{
+	display: block;
+	float: right !important;
+
+}
+#icon-bar a.active {
+    /*background-color: rgba(220, 7, 7,.8) !important;*/
+    transition: all 0.2s ease;
+    
+
+}
+
+
+}
+
+
+
+@media screen and (max-width: 750px){
+	
+  #icon-bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+}
+	#icon-bar.responsive a{
+		display: block;
+		float: none;
+		text-align: left;
+		
+
+	}
+	#icon-bar.responsive>a{
+		color: #fff;
+	}
+#icon-bar{
+	
+
+}
+
+}
+/*Animated icon-bar and Navigation bar*/
+
+
+
+#container-icon-bar{
+		display: none;
+
+	}
+
+
+@media screen and (max-width: 750px){
+
+#container-icon-bar {
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+    /*z-index:20;*/
+    border: 1px solid rgba(217, 217, 217,.3);
+    padding: 2px 6px;
+    border-radius: 6px;
+
+}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #fff !important;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: #ccc;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+/*Animated icon-bar ends here*/
+
+
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .0} 
+  to {opacity: 1}
+}
+@media screen and (max-width: 700px){
+	.text{
+		font-size: 15px;
+		padding-bottom: 10px; 
+	}
+	.numbertext {
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@keyframes shake {
+ /* 0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }*/
+
+   0% { transform: translate(10px, 0px) rotate(0deg); }
+  10% { transform: translate(20px, 0px) rotate(0deg); }
+  20% { transform: translate(30px, 0px) rotate(0deg); }
+  30% { transform: translate(40px, 2px) rotate(0deg); }
+  40% { transform: translate(50px, 0px) rotate(0deg); }
+  50% { transform: translate(-50px, 0px) rotate(0deg); }
+  60% { transform: translate(-40px, 0px) rotate(0deg); }
+  70% { transform: translate(30px, 0px) rotate(0deg); }
+  80% { transform: translate(20px, 0px) rotate(0deg); }
+  90% { transform: translate(10px, 0px) rotate(0deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+
+}
+
+img#logo{
+  width: 200px !important;
+}
