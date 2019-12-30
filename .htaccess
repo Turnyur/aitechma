@@ -1,0 +1,20 @@
+RewriteEngine On
+
+
+
+RewriteRule ^find-user/?$ ./pin_ver.php
+RewriteRule ^register-user/?$ ./index.php
+RewriteRule ^process-form/?$ ./assets/inc/process.inc.php
+
+RewriteCond %{HTTP_HOST} ^(www.)?localhost$ 
+RewriteCond %{REQUEST_URI} !^/dell/aitechma_test/public/ 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteRule ^(.*)$ /dell/aitechma_test/public/$1 
+RewriteCond %{HTTP_HOST} ^(www.)?localhost$ 
+RewriteRule ^(/)?$ dell/aitechma_test/public/ [L] 
+Options +SymLinksIfOwnerMatch
+
+#Deny folder files listing
+Options -Indexes
+
